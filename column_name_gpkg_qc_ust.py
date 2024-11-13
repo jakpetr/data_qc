@@ -1,9 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
+# import the singular good
 import sqlite3
 
 # connect to the SQLite database (geopackage)
@@ -107,10 +102,6 @@ for table in tables:
 
 # close the connection
 conn.close()
-
-
-# In[ ]:
-
 
 
 
