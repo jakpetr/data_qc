@@ -1,9 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[5]:
-
-
+# import the singular good
 import sqlite3
 
 # connect to the SQLite database (geopackage)
