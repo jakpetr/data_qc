@@ -1,15 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
-
-
-
-# In[1]:
-
-
+# we can thank Bhavya for this
+# import the goods
 import sqlite3
 from functools import reduce
 import os
@@ -102,10 +92,5 @@ check_column_consistency(gpkg_path)
 # gpkg_path = 'C:/Users/sreddyps/Downloads/test_multilayer_crime_same_col_names_diff_data_types.gpkg'
 # gpkg_path = 'C:/Users/sreddyps/Downloads/test_multilayer_crime_same_col_names_missing_data_some_rows.gpkg'
 # check_column_consistency(gpkg_path)
-
-
-# In[ ]:
-
-
 
 
