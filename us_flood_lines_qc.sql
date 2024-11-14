@@ -53,7 +53,7 @@ select 'wv', name, type from pragma_table_info('wv_flood_lines') union
 select 'wy', name, type from pragma_table_info('wy_flood_lines') 
 ) group by name, type order by name, type;
 
---look for nulls and which tables they are in
+--look for nulls and which tables they are in (pi_flag)
 select distinct PI_FLAG, HH_FLAG, count(*) from (
 select  PI_FLAG, HH_FLAG from ak_flood_lines union all
 select  PI_FLAG, HH_FLAG from al_flood_lines union all
@@ -109,7 +109,7 @@ select  PI_FLAG, HH_FLAG from wy_flood_lines
 ) where PI_FLAG is null
 group by PI_FLAG, hh_flag order by pi_flag, hh_flag;
 
---look for nulls and the table they're in
+--look for nulls and the table they're in (pi_flag)
 SELECT DISTINCT table_name, PI_FLAG, HH_FLAG, COUNT(*) 
 FROM (
     SELECT 'ak_flood_lines' AS table_name, PI_FLAG, HH_FLAG FROM ak_flood_lines UNION ALL
@@ -166,7 +166,7 @@ FROM (
 ) where PI_FLAG is null
 group by PI_FLAG, hh_flag order by pi_flag, hh_flag;
 
---look for nulls and the table they're in
+--look for nulls and the table they're in (hh_flag)
 SELECT DISTINCT table_name, PI_FLAG, HH_FLAG, COUNT(*) 
 FROM (
     SELECT 'ak_flood_lines' AS table_name, PI_FLAG, HH_FLAG FROM ak_flood_lines UNION ALL
