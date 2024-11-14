@@ -224,59 +224,59 @@ FROM (
 group by PI_FLAG, hh_flag order by pi_flag, hh_flag;
 
 --look for distinct flag values+combos
-SELECT PI_FLAG, HH_FLAG,  COUNT(*)
+SELECT PI_FLAG, HH_FLAG, fcode, ftype,  COUNT(*)
 FROM (
-select  PI_FLAG, HH_FLAG from ak_flood_lines union all
-select  PI_FLAG, HH_FLAG from al_flood_lines union all
-select  PI_FLAG, HH_FLAG from ar_flood_lines union all
-select  PI_FLAG, HH_FLAG from az_flood_lines union all
-select  PI_FLAG, HH_FLAG from ca_flood_lines union all
-select  PI_FLAG, HH_FLAG from co_flood_lines union all
-select  PI_FLAG, HH_FLAG from ct_flood_lines union all
-select  PI_FLAG, HH_FLAG from dc_flood_lines union all
-select  PI_FLAG, HH_FLAG from de_flood_lines union all
-select  PI_FLAG, HH_FLAG from fl_flood_lines union all
-select  PI_FLAG, HH_FLAG from ga_flood_lines union all
-select  PI_FLAG, HH_FLAG from hi_flood_lines union all
-select  PI_FLAG, HH_FLAG from ia_flood_lines union all
-select  PI_FLAG, HH_FLAG from id_flood_lines union all
-select  PI_FLAG, HH_FLAG from il_flood_lines union all
-select  PI_FLAG, HH_FLAG from in_flood_lines union all
-select  PI_FLAG, HH_FLAG from ks_flood_lines union all
-select  PI_FLAG, HH_FLAG from ky_flood_lines union all
-select  PI_FLAG, HH_FLAG from la_flood_lines union all
-select  PI_FLAG, HH_FLAG from ma_flood_lines union all
-select  PI_FLAG, HH_FLAG from md_flood_lines union all
-select  PI_FLAG, HH_FLAG from me_flood_lines union all
-select  PI_FLAG, HH_FLAG from mi_flood_lines union all
-select  PI_FLAG, HH_FLAG from mn_flood_lines union all
-select  PI_FLAG, HH_FLAG from mo_flood_lines union all
-select  PI_FLAG, HH_FLAG from ms_flood_lines union all
-select  PI_FLAG, HH_FLAG from mt_flood_lines union all
-select  PI_FLAG, HH_FLAG from nc_flood_lines union all
-select  PI_FLAG, HH_FLAG from nd_flood_lines union all
-select  PI_FLAG, HH_FLAG from ne_flood_lines union all
-select  PI_FLAG, HH_FLAG from nh_flood_lines union all
-select  PI_FLAG, HH_FLAG from nj_flood_lines union all
-select  PI_FLAG, HH_FLAG from nm_flood_lines union all
-select  PI_FLAG, HH_FLAG from nv_flood_lines union all
-select  PI_FLAG, HH_FLAG from ny_flood_lines union all
-select  PI_FLAG, HH_FLAG from oh_flood_lines union all
-select  PI_FLAG, HH_FLAG from ok_flood_lines union all
-select  PI_FLAG, HH_FLAG from or_flood_lines union all
-select  PI_FLAG, HH_FLAG from pa_flood_lines union all
-select  PI_FLAG, HH_FLAG from ri_flood_lines union all
-select  PI_FLAG, HH_FLAG from sc_flood_lines union all
-select  PI_FLAG, HH_FLAG from sd_flood_lines union all
-select  PI_FLAG, HH_FLAG from tn_flood_lines union all
-select  PI_FLAG, HH_FLAG from tx_flood_lines union all
-select  PI_FLAG, HH_FLAG from ut_flood_lines union all
-select  PI_FLAG, HH_FLAG from va_flood_lines union all
-select  PI_FLAG, HH_FLAG from vt_flood_lines union all
-select  PI_FLAG, HH_FLAG from wa_flood_lines union all
-select  PI_FLAG, HH_FLAG from wi_flood_lines union all
-select  PI_FLAG, HH_FLAG from wv_flood_lines union all
-select  PI_FLAG, HH_FLAG from wy_flood_lines 
+select  PI_FLAG, HH_FLAG, fcode, ftype from ak_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from al_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from ar_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from az_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from ca_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from co_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from ct_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from dc_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from de_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from fl_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from ga_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from hi_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from ia_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from id_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from il_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from in_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from ks_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from ky_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from la_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from ma_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from md_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from me_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from mi_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from mn_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from mo_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from ms_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from mt_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from nc_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from nd_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from ne_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from nh_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from nj_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from nm_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from nv_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from ny_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from oh_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from ok_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from or_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from pa_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from ri_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from sc_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from sd_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from tn_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from tx_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from ut_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from va_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from vt_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from wa_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from wi_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from wv_flood_lines union all
+select  PI_FLAG, HH_FLAG, fcode, ftype from wy_flood_lines 
 )as combined
-group by PI_FLAG, HH_FLAG
-order by PI_FLAG, HH_FLAG;
+group by PI_FLAG, HH_FLAG, fcode, ftype
+order by PI_FLAG, HH_FLAG, fcode, ftype;
